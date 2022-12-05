@@ -1,0 +1,295 @@
+body {
+  background-color: #0a142f;
+}
+footer {
+  background-color: #3b435a;
+}
+
+.mega-menu {
+  display: none;
+  left: 0;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+/* #hoverable Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hoverable {
+  position: static;
+}
+
+.hoverable > a:after {
+  content: "\25BC";
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+
+.hoverable:hover .mega-menu {
+  display: block;
+}
+
+/* #toggle Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.toggleable > label:after {
+  content: "\25BC";
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+
+.toggle-input {
+  display: none;
+}
+.toggle-input:not(checked) ~ .mega-menu {
+  display: none;
+}
+
+.toggle-input:checked ~ .mega-menu {
+  display: block;
+}
+
+.toggle-input:checked + label {
+  color: white;
+  background: #2c5282; /*@apply bg-blue-800 */
+}
+
+.toggle-input:checked ~ label:after {
+  content: "\25B2";
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+
+.nav-header {
+  @media screen and (max-width: 1024px) {
+    padding-left: 0;
+  }
+}
+.categories {
+  @media screen and (max-width: 1280px) {
+    display: none;
+    .categories-title {
+      display: none;
+    }
+    h2 {
+      display: none;
+    }
+  }
+}
+.blog-section {
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
+}
+.blog-container {
+  @media screen and (max-width: 1024px) {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: 45px;
+  }
+}
+.blog-text {
+  @media screen and (max-width: 1024px) {
+    font-size: 2rem;
+  }
+}
+.card-container {
+  @media screen and (max-width: 1024px) {
+    padding-left: 24px;
+    padding-right: 24px;
+    .card-container-div {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+  .card-container-title {
+    @media screen and (max-width: 1280px) {
+      display: none;
+    }
+  }
+}
+.laters-project-container {
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
+}
+.service-div {
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
+}
+.service-brandig-div {
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
+}
+.approach-container {
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
+}
+.number-container {
+  @media screen and (max-width: 1280px) {
+    display: block;
+    div {
+      margin-top: 68px;
+    }
+  }
+}
+.number-div {
+  @media screen and (max-width: 1280px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.creative-container {
+  @media screen and (max-width: 1280px) {
+    display: block;
+  }
+}
+.section-container {
+  @media screen and (max-width: 1280px) {
+    display: inline-block;
+  }
+}
+.world-text {
+  @media screen and (max-width: 1280px) {
+    padding-left: 0;
+  }
+}
+
+.digital-title {
+  @media screen and (max-width: 768px) {
+    font-size: 70px;
+    padding-left: 240px;
+  }
+}
+.agency-title {
+  @media screen and (max-width: 768px) {
+    font-size: 70px;
+    padding-left: 185px;
+  }
+}
+.star-img {
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+.star-title {
+  @media screen and (max-width: 2235px) {
+    margin-left: 0;
+  }
+}
+.digital-img {
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+    img {
+      width: 100%;
+      margin-left: 50px;
+      @media screen and (max-width: 700px) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+.home-img {
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    margin-left: 55px;
+    margin-right: 40px;
+    margin-top: 165px;
+  }
+}
+.bg-container-div {
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+}
+.digital-container {
+  @media screen and (max-width: 1024px) {
+    margin-top: 40px;
+    @media screen and (max-width: 700px) {
+      padding-left: 0;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.footer-container {
+  @media screen and (max-width: 1024px) {
+    display: inline-block;
+    .footer-container-div {
+      width: 100%;
+    }
+  }
+}
+.footer-contact-title {
+  @media screen and (max-width: 1024px) {
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 20px;
+  }
+}
+.footer-text {
+  @media screen and (max-width: 1024px) {
+    display: inline-block;
+    font-size: 20px;
+  }
+}
+.footer-div {
+  @media screen and (max-width: 1024px) {
+    text-align: center;
+    margin-top: 40px;
+    ul,
+    h6 {
+      margin-top: 40px;
+    }
+  }
+}
+.container-text {
+  @media screen and (max-width: 1024px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.our-latest-container {
+  @media screen and (max-width: 1024px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.service-div {
+  @media screen and (max-width: 1024px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.ornament-img,
+.start-img,
+.down-div,
+.down-svg {
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+.full-service-text {
+  @media screen and (max-width: 1024px) {
+    margin-left: 55px;
+  }
+  @media screen and (max-width: 700px) {
+    margin-left: 0;
+  }
+}
+.bg-container-img {
+  @media screen and (max-width: 700px) {
+    margin-left: 0;
+  }
+}
